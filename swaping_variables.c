@@ -1,3 +1,5 @@
+// Description:To swap 2 values using a temporary variable.
+// Author: Angelina Rose Varghese
 #include<stdio.h>
 int main()
 { 
