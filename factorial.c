@@ -1,3 +1,5 @@
+// Description: To calculate the factorial of a given number using while loop. Validate the input to ensure it is  a positive integer
+// Author: Angelina Rose Varghese
 #include<stdio.h>
 int main()
 {
