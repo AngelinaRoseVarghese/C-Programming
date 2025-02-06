@@ -1,3 +1,5 @@
+// Description: To print first n natural number using while loop
+// Author: Angelina Rose Varghese
 #include<stdio.h>
 int main()
 {
