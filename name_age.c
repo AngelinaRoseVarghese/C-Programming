@@ -1,3 +1,5 @@
+// Description: To print the roll no. and age of the student
+// Author: Angelina Rose Varghese
 #include<stdio.h>
 int main()
 {
