@@ -1,3 +1,5 @@
+// Description: To display the function of calculator using switch statement the operator used are (+,-,*,/,%). Print error message if operator is invalid 
+// Author: Angelina Rose Varghese
 #include<stdio.h>
 int main()
 {
