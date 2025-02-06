@@ -1,3 +1,5 @@
+// Description: To print the ASCII value of the given character
+// Author: Angelina Rose Varghese
 #include<stdio.h>
 int main()
 {
