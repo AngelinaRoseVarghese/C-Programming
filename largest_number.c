@@ -1,3 +1,5 @@
+// Description: To input 3 numbers and find the largest among them using nested if statements. Display appropriate messages for each scenario
+// Author: Angelina Rose Varghese
 #include<stdio.h>
 int main()
 {
