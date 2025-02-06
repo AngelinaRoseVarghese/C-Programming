@@ -1,3 +1,5 @@
+// Description: To check whether a triangle is valid or not when the 3 angles of the triangle are entered through keyboard
+// Author: Angelina Rose Varghese
 #include<stdio.h>
 int main()
 {
