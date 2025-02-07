@@ -1,0 +1,23 @@
+// Description: To find the largest element in array and also the postition of that element.
+//Date: 07/02/2025
+//Author: Angelina Rose Varghese
+#include <stdio.h>
+int main()
+{
+   int num[100],largest=0,position,count,i;
+   printf("How many numbers you want to enter: ");
+   scanf("%d",&count);
+   for(i=0;i<count;i++)
+   {
+      printf("Enter the number: ") ;
+      scanf("%d",&num[i]);
+      if (num[i]>largest)
+      {
+          largest=num[i];
+          position=i;
+      }
+   }
+   printf("is the largest %d\n",largest);
+   printf("The position of largest is %d\n",position);
+   return 0;
+}
