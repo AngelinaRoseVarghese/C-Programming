@@ -6,14 +6,16 @@
 int main() 
 {
    int i,j,result;
+    
    for(i=1;i<=5;i++)
    {
+       printf("Multiplication Table of %d\n",i);
        for(j=1;j<=10;j++)
        {
            result=i*j;
-           printf("%dx%d=%d\t",i,j,result);
+           printf("%d\n",result);
        }
-  printf("\n");
+ 
    }
     return 0;
 }
