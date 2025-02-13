@@ -4,7 +4,7 @@
 #include<stdio.h>
 int main()
 {
-	int count,i,j;
+	int count,i;
 	printf("How many elements you want to enter: ");
 	scanf("%d",&count);
 	int num[count],copy[count];
@@ -12,18 +12,15 @@ int main()
 	for (i=0;i<count;i++)
 	{
 		scanf("%d",&num[i]);
-		for (j=0;j<count;j++)
-		{
-			scanf("%d",&copy[j]);
-		
-		}
-		
 	}
-	for (j=0;j<count;j++)
+	for (i=0;i<count;i++)
 	{
-		printf("%d\t",num[j]);
-		
+		copy[i]=num[i];
 	}
-	
+	printf("The copied array is: ")	;
+	for (i=0;i<count;i++)
+	{
+		printf("%d\t",copy[i]);
+	}
 	return 0;
 }
