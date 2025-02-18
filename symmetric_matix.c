@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int row1,column1,row2,column2,i,j;
+	int row1,column1,row2,column2,i,j,flag=0;
 	printf("Enter the no of rows and columns of the matrix: ");
 	scanf("%d%d",&row1,&column1);
 	int num[row1][column1];
@@ -27,17 +27,17 @@ int main()
 	{
 		for(j=0;j<column1;j++)
 		{
-			if (transpose[i][j]==num[i][j])
+			if (transpose[i][j]!=num[i][j])
 			{
-				printf("It is a symmetric\n");
-				return 0;
+			flag=1	;
+			break;
 			}
-			else
-			{
-				printf("It not a symmetric\n");
-				return 0;
-			}
+			
 		}
 	}
+	if(flag==0)
+	   printf("It is a symmetric\n");
+	else
+	   printf("It is not symmetric\n");			
 	return 0;
 }
