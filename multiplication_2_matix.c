@@ -2,6 +2,7 @@
 //Author: Angelina Rose Varghese
 //Date: 18/02/2025
 #include<stdio.h>
+#include<math.h>
 int main()
 {
 	int row1,column1,i,j,row2,column2,k,l;
@@ -27,30 +28,37 @@ int main()
 			scanf("%d",&num2[k][l]);
 		}
 	}
-	int result[i][j];
-	if(i==k && j==l)
-	{
-		for(i=0;i<row1;i++)
+	int result[row1][column2];
+	for(i=0;i<row1;i++)
 		{
-			for(j=0;j<column1;j++)
+			for(j=0;j<column2;j++)
 			{
-				result[i][j]=num1[i][j]*num2[i][j];
-			}	
-		}
-		printf("The sum of two matices is: \n");
-		for(i=0;i<row1;i++)
-		{
-			for(j=0;j<column1;j++)
-			{
-				printf("%d\t",result[i][j]);
+			        result[i][j]=0;
 			}
-			printf("\n");
 		}
-	}
-	else
+	if(column1!=row2)
 	{
-		printf("Invalid\n");
-		return 0;
+	    printf("Invalid");
+	    return 0;
+	}
+    for(i=0;i<row1;i++)
+	{
+		for(j=0;j<column2;j++)
+		{
+			 for(k=0;k<column1;k++)
+			  {
+			       result[i][j]+=(num1[i][k])*(num2[k][j]);
+			  }
+		}	
+	}
+	printf("The multiplicaion of two matices is: \n");
+	for(i=0;i<row1;i++)
+	{
+		for(j=0;j<column2;j++)
+		{
+			printf("%d\t",result[i][j]);
+		}
+		printf("\n");
 	}
 	return 0;
 }	
